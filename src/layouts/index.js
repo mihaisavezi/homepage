@@ -53,12 +53,12 @@ const TemplateWrapper = ({ children }) => (
                 </div>
                 <div className="w-100 w-two-thirds-m w-two-thirds-l pa2 pa3-ns pa5-l flex flex-column justify-center items-start">
                   <h2 className="f1 f-headline-l lh-solid blue-6">I build the stuff you see</h2>
-                  <p className="lh-title f6 f5-ns pt4 gray-5 dn db-ns">with tried and tested web technologies:<span className="dib ttu ph2 bt-0 bl-0 br-0 bb b--dotted tracked avenir f7 mr2">html5</span>
+                  <p className="lh-title f6 f5-ns pt4 gray-4 dn db-ns">with tried and tested web technologies:<span className="dib ttu ph2 bt-0 bl-0 br-0 bb b--dotted tracked avenir f7 mr2">html5</span>
                     <span className="dib ttu ph2 bt-0 bl-0 br-0 bb b--dotted tracked avenir f7 mr2">css3</span>
                     <span className="dib ttu ph2 bt-0 bl-0 br-0 bb b--dotted tracked avenir f7 mr2">javascript</span>
                   </p>
-                  <div className="db dn-ns w-100 gray-5">
-                    <p className="lh-title f5 f5-ns pb4 pt2 gray-5">with tried and tested web technologies:</p>
+                  <div className="db dn-ns w-100 gray-4">
+                    <p className="lh-title f5 f5-ns pb4 pt2 gray-4">with tried and tested web technologies:</p>
                     <div className="center tc pv2">
                       <span className="ttu bt-0 bl-0 br-0 bb b--dotted tracked avenir f7">html5</span>
                     </div>

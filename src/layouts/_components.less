@@ -1,6 +1,6 @@
 .gradient-animation( @degrees, @start, @end, @transTime ) {
     background-size: 100%;
-    background-image: linear-gradient(@start, @end);
+    background-image: linear-gradient(@degrees, @start, @end);
     position: relative;
     z-index: 100;
     &:before {
@@ -28,14 +28,12 @@
     .bb;
     &:hover {
         .f6;
-        border-color: var(--blue-0);
+        border-color: var(--blue-7);
         transition: border-color 200ms ease;
-        .gradient-animation(180deg, var(--blue-0), var(--blue-1), 600);
     }
     &__isActive {
         .f6;
-        border-color: var(--blue-0);
+        border-color: var(--blue-7);
         transition: border-color 300ms ease;
-        .gradient-animation(180deg, var(--blue-1), var(--blue-0), 600);
     }
 }

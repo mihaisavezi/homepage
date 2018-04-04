@@ -1,0 +1,41 @@
+.gradient-animation( @degrees, @start, @end, @transTime ) {
+    background-size: 100%;
+    background-image: linear-gradient(@start, @end);
+    position: relative;
+    z-index: 100;
+    &:before {
+        background-image: linear-gradient(@degrees, @end, @start);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: opacity @transTime;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.text-link {
+    .b--transparent;
+    .bb;
+    &:hover {
+        .f6;
+        border-color: var(--blue-0);
+        transition: border-color 200ms ease;
+        .gradient-animation(180deg, var(--blue-0), var(--blue-1), 600);
+    }
+    &__isActive {
+        .f6;
+        border-color: var(--blue-0);
+        transition: border-color 300ms ease;
+        .gradient-animation(180deg, var(--blue-1), var(--blue-0), 600);
+    }
+}

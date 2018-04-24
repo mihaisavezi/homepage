@@ -24,16 +24,18 @@
 }
 
 .text-link {
-    .b--transparent;
-    .bb;
-    &:hover {
-        .f6;
-        border-color: var(--blue-7);
-        transition: border-color 200ms ease;
-    }
+    .hvr-underline-from-left;
     &__isActive {
         .f6;
-        border-color: var(--blue-7);
-        transition: border-color 300ms ease;
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--blue-7);
+            height: 1px;
+        }
     }
 }

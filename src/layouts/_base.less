@@ -43,30 +43,3 @@ html, body {
 .min-h-75 {
     min-height: 75%;
 }
-
-
-.hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 0;
-        background: var(--blue-7);
-        height: 1px;
-        transition-property: right;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-out;
-    }
-    &:hover:before, :focus:before, :active:before {
-        right: 0;
-    }
-}

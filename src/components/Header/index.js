@@ -6,12 +6,18 @@ import logo from '../../assets/logo-2.png';
 const Header = () => (
   <nav className="row pb3 w-100 flex-m flex-l pa4-m pa5-l flex-row items-center justify-between">
     <div className="left">
-      <img src={logo} className="h3 w3 center mb3 mb0-ns db mt2 mt0-ns" alt="" srcSet=""/>
+      <div className="h3 w3 center mb3 mb0-ns db mt2 mt0-ns glitch-hover">
+        <img src={logo}  alt="" srcSet=""/>
+        <img src={logo}  alt="" srcSet=""/>
+        <img src={logo}  alt="" srcSet=""/>
+      </div>
     </div>
     <div className="right flex items-center justify-center justify-end-ns">
       <div className="flex ph4-ns">
         <p className="text-link text-link__isActive f6 athelas ttc pa2 pa3-ns pb2-ns gray-4 mr1">home</p>
         <p className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4">projects</p>
+        <p className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4">blog</p>
+        <p className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4">reading list</p>
       </div>
       <div className="h2 w2 mh2">
         <a href="https://github.com/mihaisavezi" className="gray-4 h-100 flex flex-column justify-center items-center">

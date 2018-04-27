@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../../assets/logo-2.png';
+import logo from '../assets/logo-2.png';
 
 
 const Header = () => (
@@ -16,7 +16,7 @@ const Header = () => (
       <div className="flex ph4-ns">
         <p className="text-link text-link__isActive f6 athelas ttc pa2 pa3-ns pb2-ns gray-4 mr1">home</p>
         <p className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4">projects</p>
-        <p className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4">blog</p>
+        <Link className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4 no-underline" to='/blog'>blog</Link>
         <p className="text-link f6 athelas ttc pa2 pa3-ns pb2-ns gray-4">reading list</p>
       </div>
       <div className="h2 w2 mh2">

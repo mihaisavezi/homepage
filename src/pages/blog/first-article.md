@@ -4,4 +4,4 @@ date: "2017-11-07"
 title: "My first blog post"
 ---
 
-test
+This is a freaking test article to test features

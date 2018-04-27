@@ -6,11 +6,13 @@ import logo from '../assets/logo-2.png';
 const Header = () => (
   <nav className="row pb3 w-100 flex-m flex-l pa4-m pa5-l flex-row items-center justify-between">
     <div className="left">
-      <div className="h3 w3 center mb3 mb0-ns db mt2 mt0-ns glitch-hover">
-        <img src={logo}  alt="" srcSet=""/>
-        <img src={logo}  alt="" srcSet=""/>
-        <img src={logo}  alt="" srcSet=""/>
-      </div>
+      <Link to="/">
+        <div className="h3 w3 center mb3 mb0-ns db mt2 mt0-ns glitch-hover">
+          <img src={logo} alt="" srcSet="" />
+          <img src={logo} alt="" srcSet="" />
+          <img src={logo} alt="" srcSet="" />
+        </div>
+      </Link>
     </div>
     <div className="right flex items-center justify-center justify-end-ns">
       <div className="flex ph4-ns">

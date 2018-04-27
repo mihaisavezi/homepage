@@ -6,11 +6,14 @@ const IndexPage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const Posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
-
-  return <div>{Posts}</div>;
+  console.log(edges);
+  return <div className="mt5 center tc">
+      {
+        edges
+        .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+        .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+      }
+    </div>;
 };
 
 export default IndexPage;

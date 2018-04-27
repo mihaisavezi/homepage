@@ -24,3 +24,10 @@ npm run develop
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+
+## BLOG
+
+### features:
+
+- reading list that looks like -> https://signalvnoise.com/posts/3285-the-typography-and-layout-behind-the-new-signal-vs-noise-redesign

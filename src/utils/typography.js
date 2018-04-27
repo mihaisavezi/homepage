@@ -1,12 +1,8 @@
 import Typography from "typography";
-import themeAlton from 'typography-theme-alton';
+import themeKirkham from 'typography-theme-kirkham';
 
-themeAlton.overrideThemeStyles = ({ rhythm }, options) => ({
-    'a:hover,a:active': {
-        color: '--var(blue-1)',
-    },
-})
+themeKirkham.overrideThemeStyles = ({ rhythm }, options) => ({})
 
-const typography = new Typography(themeAlton);
+const typography = new Typography(themeKirkham);
 
 export default typography;

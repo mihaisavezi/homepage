@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-less`,
+    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-plugin-typography",
       options: {
@@ -18,6 +19,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/blog`,
+        name: "markdown-pages",
       },
     },
     `gatsby-transformer-sharp`,

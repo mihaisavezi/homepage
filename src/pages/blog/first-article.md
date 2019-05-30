@@ -1,0 +1,7 @@
+---
+path: "/blog/first-article"
+date: "2017-11-07"
+title: "My first blog post"
+---
+
+This is a freaking test article to test features

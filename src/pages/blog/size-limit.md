@@ -1,6 +1,6 @@
 ---
 path: "/blog/size-limit"
-date: "2019-31-05"
+date: "2019-05-31"
 title: "Today I learned: Size-limit - calculate the real cost of your JS for end users"
 ---
 

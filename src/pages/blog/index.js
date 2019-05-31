@@ -1,4 +1,4 @@
-import React from "./node_modules/react"
+import React from "react"
 import PostLink from "../../components/postLink"
 import BlogLayout from "../../components/blogLayout"
 
@@ -25,7 +25,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -33,7 +33,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
         }

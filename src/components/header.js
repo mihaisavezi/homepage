@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
-import logo from "../images/logo-2.png"
+import logo from "../images/logo.png"
 
 const Header = () => (
   <nav className="row pb3 w-100 flex-m flex-l pa4-m pa5-l flex-row items-center justify-between">
